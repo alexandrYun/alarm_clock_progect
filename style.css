@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+}
+
+.alarm-clock-wrapper {
+    background-color: #262626;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    color:#F2A20C;
+    font-size: 70px;
+    border-bottom: 1px solid #F2A20C;
+    margin-bottom: 30px;
+}
+
+.alarm-clock {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.alarm-clock__label {
+    font-size: 30px;
+}
+
+.alarm-clock__time {
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+
+.submit {
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    background-color: #A61414;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.ring_time {
+    font-size: 20px;
+    color: #F2A20C;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes off {
+    from {
+        width: 280px;
+    }
+    to {
+        width: 300px;
+    }
+}
+
+.alarm-off-btn {
+    display: none;
+    height: 60px;
+    background-color:#A61414;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    color: White;
+    font-weight: 500;
+    cursor: pointer;
+    animation-name: off;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    bottom: -150px;
+}
+
+.submit_disabled {
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    cursor: auto;
+    background-color: rgba(166, 20, 20, 0.5);
+}
